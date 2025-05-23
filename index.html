@@ -2,32 +2,32 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="theme-color" content="#000000">
-  <link rel="shortcut icon" href="./favicon.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="shortcut icon" href="./favicon.png" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@8/themes/satellite-min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic@1.11.0/dist/theme.min.css">
-  <link rel="stylesheet" href="./src/index.css">
-  <link rel="stylesheet" href="./src/app.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@8/themes/satellite-min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic@1.11.0/dist/theme.min.css" />
+  <link rel="stylesheet" href="./src/index.css" />
+  <link rel="stylesheet" href="./src/app.css" />
 
   <title>ais-ecommerce-demo-app</title>
 </head>
 
 <body>
   <header class="header">
-  <h1 class="header-title">
-    <a href="/">Spencer and Williams</a>
-  </h1>
-</header>
-
+    <h1 class="header-title">
+      <a href="/">Spencer and Williams</a>
+    </h1>
+  </header>
 
   <div class="container">
     <div class="search-panel">
       <div class="search-panel__filters">
-        <!-- This is the corrected ID to match app.js -->
-        <div id="brand-categories-type-price_range-list"></div>
+        <!-- Filters now use separate containers -->
+        <div id="brand-list"></div>
+        <div id="type-list"></div>
       </div>
 
       <div class="search-panel__results">
