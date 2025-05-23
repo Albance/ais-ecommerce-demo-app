@@ -41,11 +41,18 @@ search.addWidgets([
   instantsearch.widgets.configure({
     hitsPerPage: 8,
   }),
+  // Replaced combined refinementList with two separate filters
   instantsearch.widgets.panel({
-    templates: { header: () => 'brand categories type price_range' },
+    templates: { header: () => 'Brand' },
   })(instantsearch.widgets.refinementList)({
-    container: '#brand-categories-type-price_range-list',
-    attribute: 'brand categories type price_range',
+    container: '#brand-list',
+    attribute: 'brand',
+  }),
+  instantsearch.widgets.panel({
+    templates: { header: () => 'Type' },
+  })(instantsearch.widgets.refinementList)({
+    container: '#type-list',
+    attribute: 'type',
   }),
   instantsearch.widgets.pagination({
     container: '#pagination',
